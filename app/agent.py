@@ -70,9 +70,9 @@ def action_node(state: AgentState):
     if "BUY" in analysis.upper() or "ALERT" in analysis.upper():
         print(f"--- CHIEF OF STAFF: Executing Proactive Actions for {ticker} ---")
         
-        # 1. Manage Interaction: Email the briefing to your Optum account
+        # 1. Manage Interaction: Email the briefing
         send_investor_briefing(
-            recipient="amar.vankayalapati@optum.com",
+            recipient="amar.v@outlook.com",
             ticker=ticker,
             analysis=analysis
         )

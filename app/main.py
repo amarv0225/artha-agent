@@ -5,7 +5,7 @@ from typing import Optional, List
 from supabase import create_client, Client
 from .agent import artha_brain
 
-app = FastAPI(title="The Brian System: Executive Assistant API")
+app = FastAPI(title="The Artha-Agent System: Executive Assistant API")
 
 # Initialize Supabase Client
 supabase_url = os.environ.get("SUPABASE_URL")
@@ -69,7 +69,7 @@ async def proactive_pulse(background_tasks: BackgroundTasks):
             result = await run_brian_engine(ticker)
             
             # 3. Decision Logic: Only "Action" if it's not a HOLD
-            # This prevents your Gmail/Calendar from being flooded every hour
+            # This prevents Gmail/Calendar from being flooded every hour
             if "Action: HOLD" not in result["analysis"]:
                 # The 'take_action' node inside artha_brain handles the Gmail/Calendar
                 summary_actions.append(f"Alert triggered for {ticker}")
