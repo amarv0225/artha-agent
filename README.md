@@ -1,14 +1,7 @@
-# The Brian System (Artha-Agent) 🚀
+# The Artha-Agent 🚀
 ### *An Autonomous AI Executive Assistant for Proactive Investment Management*
 
-The Brian System is an agentic workflow built on Google Cloud that transforms investment monitoring from a reactive chore into a proactive executive experience. Leveraging **Gemini 1.5 Pro** and the **Arcade MCP**, Brian autonomously monitors market conditions, analyzes them against personalized user strategies, and manages professional communication and scheduling via Google Workspace.
-
----
-
-## 📄 Participant Details
-- **Participant Name:** Amar Vankayalapati
-- **Project Name:** Artha-Agent (The Brian System)
-- **Email:** amar.v0225@gmail.com
+The Artha-Agent is an agentic workflow built on Google Cloud that transforms investment monitoring from a reactive chore into a proactive executive experience. Leveraging **Gemini 1.5 Pro** and the **Arcade MCP**, Artha-Agent autonomously monitors market conditions, analyzes them against personalized user strategies, and manages professional communication and scheduling via Google Workspace.
 
 ---
 
