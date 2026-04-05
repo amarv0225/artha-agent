@@ -10,10 +10,17 @@ st.set_page_config(page_title="The Artha-Agent System", page_icon="🚀", layout
 # Connection details
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
 API_BASE_URL = os.getenv("API_URL", "https://artha-agent-337407073347.us-central1.run.app")
 
+# This is the URL of your BACKEND Cloud Run service
+API_BASE_URL = os.getenv("API_URL", "http://localhost:8080")
+
 # Initialize Supabase
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+if SUPABASE_URL and SUPABASE_KEY:
+    supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+else:
+    st.error("Configuration Error: SUPABASE_URL or SUPABASE_KEY is missing.")
 
 # Initialize Session State for View Management
 if 'view' not in st.session_state:
